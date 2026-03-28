@@ -245,6 +245,13 @@ Detailed performance metrics per endpoint.
       "nodes":         number,
       "observers":     number
     }
+  },
+  "goRuntime": {                    // Go server only
+    "heapMB":       number,         // heap allocation in MB
+    "sysMB":        number,         // total system memory in MB
+    "numGoroutine": number,         // active goroutines
+    "numGC":        number,         // completed GC cycles
+    "gcPauseMs":    number          // last GC pause in ms
   }
 }
 ```
